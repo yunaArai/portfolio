@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>portforio</title>
+    <meta name="description" content="portforio">
+    <meta property="og:title" content="portforio">
+    <meta property="og:description" content="portforio">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:site_name" content="Kira-meki">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="/assets/style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Serif+JP:wght@600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Serif+JP:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<script>
+    const PASSWORD = 'aaaa';
+
+    const input = prompt('パスワードを入力してください');
+
+    if (input !== PASSWORD) {
+        document.body.innerHTML = '<p style="text-align:center;margin-top:40vh;">アクセスできません</p>';
+    }
+</script>
+
+<body>
+    <header class="l-header">
+        <div class="l-inner">
+            <h1><a href="/"><img src="/assets/image/header_logo.png" alt="ロゴ" class="logo"></a></h1>
+            <ul class="nav__none">
+                <li class="shadow"><a href="#section02">ABOUT</a></li>
+                <li class="shadow"><a href="#section03">WORKS</a></li>
+                <li class="contact"><a href="#section04">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="l-main p-index-page">
+        <article>
+            <section id="section01">
+                <div class="main__visual"></div>
+                <div class="mv__bk"></div>
+                <div class="__block-01">
+                    <p class="title__text">
+                        <span>P</span><span>O</span><span>R</span><span>T</span>
+                        <span>F</span><span>O</span><span>L</span><span>I</span><span>O</span>
+                    </p>
+                </div>
+            </section>
+            <section id="section02">
+                <div class="__visual">
+                    <div class="l-inner">
+                        <h2><span>------- A</span>BOUT</h2>
+                        <div class="__block-01 js-scroll">
+                            <div class="__box01 animation">
+                                <img src="/assets/image/about.jpg" alt="" class="img__about sp__none">
+                            </div>
+                            <div class="__box02">
+                                <h3>Yuna Arai | 新井 友菜</h3>
+                                <p class="pb20">1999年生まれ / 長野県出身 / 東京都在住</p>
+                                <p class="pb20">
+                                    2022.04 新卒入社<br>
+                                    2022.06~ WEBMARTオンサイトチーム
+                                    (集計・デザイン・コーディング・CMS更新など)<br>
+                                    2025.04~ 受託 ローソン　ユニバーサルミュージック
+                                    （・デザイン・コーディング・ディレクターなど）
+                                </p>
+                                <div class="__wrapper">
+                                    <div>
+                                        <p>スキル</p>
+                                        <ul>
+                                            <li>★★★ Illustrator</li>
+                                            <li>★★★ Photoshop</li>
+                                            <li>★★★ XD</li>
+                                            <li>★★☆ Figma</li>
+                                            <li>★★★ HTML</li>
+                                            <li>★★★ CSS</li>
+                                            <li>★☆☆ JavaScript</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p>資格</p>
+                                        <ul>
+                                            <li>ITパスポート</li>
+                                            <li>ウェブデザイン技能検定</li>
+                                            <li>色彩検定</li>
+                                            <li>Photoshop クリエイター能力試験</li>
+                                            <li>Office Excel 2019 アソシエイト (MOS)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section03">
+                <div class="l-inner">
+                    <h2><span>------- W</span>ORKS</h2>
+                    <h4 class="small__title">LP / flyer</h4>
+                    <div class="__block js-scroll">
+                        <div class="__wrap">
+                            <a href="https://www.lawson.co.jp/service/application/hoken/hoken/choinori-movie.html"
+                                target="_blank">
+                                <div class="__box">
+                                    <img src="/assets/image/choinori-movie.png" alt="">
+                                    <p class="name">ローソン様 | LP コーディング</p>
+                                    <p class="__text">
+                                        <span>HTML</span><span>css</span><span>JavaScript</span><br>&emsp;
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="__wrap">
+                            <a href="https://www.lawson.co.jp/service/application/hoken/hoken/choinori.html">
+                                <div class="__box">
+                                    <img src="/assets/image/choinori.png" alt="">
+                                    <p class="name">ローソン様 | YesNoチャートデザイン</p>
+                                    <p class="__text">
+                                        <span>Figma</span><span>Illustrator</span><span>Phoshop</span><br><span>HTML</span><span>css</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="__wrap">
+                            <a href="https://www.lawson.co.jp/service/application/hoken/hoken/heatstroke.html">
+                                <div class="__box">
+                                    <img src="/assets/image/heatstroke.png" alt="">
+                                    <p class="name">ローソン様 | LP パーツデザインコーディング</p>
+                                    <p class="__text">
+                                        <span>Figma</span><span>Phoshop</span><br><span>HTML</span><span>css</span><span>JavaScript</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="__wrap">
+                            <a href="https://direct.jp.fujitsu.com/biz-ui6082.html">
+                                <div class="__box">
+                                    <img src="/assets/image/amazon_cp.png" alt="">
+                                    <p class="name">富士通様 | LP デザインコーディング</p>
+                                    <p class="__text">
+                                        <span>Illustrator</span><span>Phoshop</span><br><span>HTML</span><span>css</span><span>JavaScript</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="__wrap">
+                            <a href="https://www.fmv.com/store/pc/ui3292.html">
+                                <div class="__box">
+                                    <img src="/assets/image/memori.png" alt="">
+                                    <p class="name">富士通様 | 特設ページ デザインコーディング</p>
+                                    <p class="__text">
+                                        <span>Illustrator</span><span>Phoshop</span><br><span>HTML</span><span>css</span><span>JavaScript</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="__wrap">
+                            <a href="./works_01.html">
+                                <div class="__box">
+                                    <img src="/assets/image/flyer.png" alt="">
+                                    <p class="name">富士通様 | 社友会チラシ デザイン</p>
+                                    <p class="__text"><span>Illustrator</span><br>&emsp;</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section04">
+                <div class="l-inner">
+                    <h4 class="small__title">Banner / Logo</h4>
+                </div>
+                <div class="__block-01 sliderArea">
+                    <div class="slider">
+                        <div class="__box">
+                            <img src="/assets/image/01-1.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/01-2.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/02-1.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/02-2.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/03-1.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/03-2.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/04-1.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/04-2.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/05-1.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/05-2.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/06-1.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/06-2.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/07-1.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/07-2.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/08-1.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/08-2.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/09-1.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/09-2.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/10-1.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/10-2.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/11-1.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/11-2.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/12-1.png" alt="">
+                        </div>
+                        <div class="__box">
+                            <img src="/assets/image/12-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="btn__area">
+                    <a href="./banner.html" class="btn">VIEW MORE</a>
+                </div>
+            </section>
+            <section id="section05" class="catch__area">
+                <div class="l-inner">
+                    <div class="__block-01">
+                        <h2><span>------- C</span>ONTACT</h2>
+                        <div class="__wrap">
+                            <div class="__box">
+                                <p>トランスコスモス株式会社<br>dmc1部1課<br>新井友菜<br>yuna.arai@transcosmos.com</p>
+                            </div>
+                            <!--<a href="tel:+81-90-3565-9314"><img src="/assets/image/phone_logo.png" alt="ロゴ"
+                                class="phone_logo"></a>-->
+                            <input id="copyTarget" type="text" value="yuna.arai@transcosmos.com" class="copyTarget">
+                            <img src="/assets/image/mail_logo.png" alt="copy-logo" style="cursor: pointer;"
+                                onclick="copyToClipboard()">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="l-inner wrapper">
+            <a href="#section01" class="pagetop"><span class="dli-arrow-up"></span></a>
+        </div>
+        <div class="footer__area">
+            <div class="l-inner __block-01">
+                <h1><a href="/"><img src="/assets/image/footer_logo.png" alt="ロゴ" class="logo"></a></h1>
+            </div>
+        </div>
+    </footer>
+
+    <nav class="c-humburger-menu hamburgerArea">
+        <ul class="nav-links">
+            <li class="nav_items"><a href="#section02">ABOUT</a></li>
+            <li class="nav_items"><a href="#section03">WORKS</a></li>
+            <li class="nav_items"><a href="#section03">CONTACT</a></li>
+        </ul>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/assets/script/slidar.js"></script>
+    <script src="/assets/script/hamburger.js"></script>
+    <script src="/assets/script/copy.js"></script>
+    <script src="/assets/script/scroll.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
