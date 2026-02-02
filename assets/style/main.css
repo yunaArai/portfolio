@@ -195,7 +195,7 @@ h4{
     position: relative;
 }
 #section01 .main__visual{
-    background-image: url(../image/mainVIsual_pc.jpg);
+    background-image: url(../image/mainVisual_pc.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -304,7 +304,7 @@ letter-spacing: 0.1em;
     padding: 35px;
     width: 300px;
 }
-#section03 .__wrap01 .__box:hover,#section03 .__wrap02 .__box:hover {
+#section03 .__wrap .__box:hover {
     margin: 6px 0 0 6px;
     border-top-width: 2px;
     border-bottom-width: 2px;
@@ -404,9 +404,6 @@ letter-spacing: 0.1em;
 #section05 .l-inner{
     padding: 40px 0;
 }
-#section05 .__box{
-    padding: 0 13vw;
-}
 #section05 .__block-01{
     margin: 0 auto;
     display: flex;
@@ -416,6 +413,7 @@ letter-spacing: 0.1em;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    gap: 13vw;
 }
 #section05 img{
     width: 50px;
@@ -601,7 +599,7 @@ width: 100%;
         font-size: 2.5rem;
     }
     #section01 .main__visual{
-        background-image: url(../image/mainVIsual_sp.jpg) ;
+        background-image: url(../image/mainVisual_sp.jpg) ;
         background-size: cover;
         height: auto;
         aspect-ratio: 13 / 15;
