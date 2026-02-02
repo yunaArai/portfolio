@@ -23,15 +23,22 @@
         rel="stylesheet">
 </head>
 
-<!--<script>
-    const PASSWORD = 'aaaa';
+<script>
+    const PASSWORD = 'xxxx'; // 上司に伝えるパスワード
+    const AUTH_KEY = 'isAuthenticated';
 
-    const input = prompt('パスワードを入力してください');
+    // すでに認証済みなら何もしない
+    if (sessionStorage.getItem(AUTH_KEY) !== 'true') {
+        const input = prompt('パスワードを入力してください');
 
-    if (input !== PASSWORD) {
-        document.body.innerHTML = '<p style="text-align:center;margin-top:40vh;">アクセスできません</p>';
+        if (input === PASSWORD) {
+            sessionStorage.setItem(AUTH_KEY, 'true');
+        } else {
+            document.body.innerHTML =
+                '<p style="text-align:center;margin-top:40vh;">アクセスできません</p>';
+        }
     }
-</script>>-->
+</script>
 
 <body>
     <header class="l-header">
@@ -110,8 +117,7 @@
                     <h4 class="small__title">LP / flyer</h4>
                     <div class="__block js-scroll">
                         <div class="__wrap">
-                            <a href="./works_06.html"
-                                target="_blank">
+                            <a href="./works_06.html" target="_blank">
                                 <div class="__box">
                                     <img src="./assets/image/choinori-movie.png" alt="">
                                     <p class="name">ローソン様 | LP コーディング</p>
@@ -127,7 +133,7 @@
                                     <img src="./assets/image/choinori.png" alt="">
                                     <p class="name">ローソン様 | YesNoチャートデザイン</p>
                                     <p class="__text">
-                                        <span>Figma</span><span>Illustrator</span><span>Phoshop</span><br><span>HTML</span><span>css</span>
+                                        <span>Figma</span><span>Illustrator</span><span>Phoshop</span><br>&emsp;
                                     </p>
                                 </div>
                             </a>
