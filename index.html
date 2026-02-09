@@ -24,10 +24,9 @@
 </head>
 
 <script>
-    const PASSWORD = 'xxxx'; // 上司に伝えるパスワード
+    const PASSWORD = 'xxxx';
     const AUTH_KEY = 'isAuthenticated';
 
-    // すでに認証済みなら何もしない
     if (sessionStorage.getItem(AUTH_KEY) !== 'true') {
         const input = prompt('パスワードを入力してください');
 
@@ -43,7 +42,7 @@
 <body>
     <header class="l-header">
         <div class="l-inner">
-            <h1><a href="/"><img src="./assets/image/header_logo.png" alt="ロゴ" class="logo"></a></h1>
+            <h1><a href="./"><img src="./assets/image/header_logo.png" alt="ロゴ" class="logo"></a></h1>
             <ul class="nav__none">
                 <li class="shadow"><a href="#section02">ABOUT</a></li>
                 <li class="shadow"><a href="#section03">WORKS</a></li>
@@ -117,7 +116,7 @@
                     <h4 class="small__title">LP / flyer</h4>
                     <div class="__block js-scroll">
                         <div class="__wrap">
-                            <a href="./works_06.html" target="_blank">
+                            <a href="./works_06.html">
                                 <div class="__box">
                                     <img src="./assets/image/choinori-movie.png" alt="">
                                     <p class="name">ローソン様 | LP コーディング</p>
@@ -150,7 +149,7 @@
                             </a>
                         </div>
                         <div class="__wrap">
-                            <a href="./works_02.html">
+                            <a href="./works_03.html">
                                 <div class="__box">
                                     <img src="./assets/image/amazon_cp.png" alt="">
                                     <p class="name">富士通様 | LP デザインコーディング</p>
@@ -292,7 +291,7 @@
         </div>
         <div class="footer__area">
             <div class="l-inner __block-01">
-                <h1><a href="/"><img src="./assets/image/footer_logo.png" alt="ロゴ" class="logo"></a></h1>
+                <h1><a href="./"><img src="./assets/image/footer_logo.png" alt="ロゴ" class="logo"></a></h1>
             </div>
         </div>
     </footer>
