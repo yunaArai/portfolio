@@ -249,9 +249,6 @@ h4{
 }
 
 /*section02*/
-#section02 {
-    background: linear-gradient(0.4turn, #fffcf7,#f4fffb, #f3fbff);
-}
 #section02 .l-inner{
     padding: 40px 0;
 }
@@ -344,6 +341,9 @@ letter-spacing: 0.1em;
 }
 
 /*section04*/
+#section04 {
+    background: linear-gradient(0.4turn, #fffcf7,#f4fffb, #f3fbff);
+}
 #section04 .l-inner{
     padding: 40px 0 20px;
 }
