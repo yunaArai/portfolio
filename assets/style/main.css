@@ -150,11 +150,12 @@ h4{
 
 /*メインビジュアル*/
 #section01 .title__text{
-    font-family: 'Marcellus';
     font-size: 5.4rem;
-    letter-spacing: 0.2em;
     color: #fff;
     text-shadow: 0 0 10px #1f3c88;
+    font-family: "Ms Madi", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 .title__text span {
     display: inline-block;
