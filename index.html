@@ -16,24 +16,27 @@
     <link rel="stylesheet" href="./assets/style/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cutive&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kiwi+Maru&family=Ms+Madi&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cutive&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kiwi+Maru&family=Ms+Madi&display=swap"
+        rel="stylesheet">
+    <script>
+        const PASSWORD = 'araipf';
+        const AUTH_KEY = 'isAuthenticated';
+
+        if (sessionStorage.getItem(AUTH_KEY) !== 'true') {
+            const input = prompt('パスワードを入力してください');
+
+            if (input === PASSWORD) {
+                sessionStorage.setItem(AUTH_KEY, 'true');
+            } else {
+                document.body.innerHTML =
+                    '<p style="text-align:center;margin-top:40vh;">アクセスできません</p>';
+            }
+        }
+    </script>
 </head>
 
-<script>
-    const PASSWORD = 'araipf';
-    const AUTH_KEY = 'isAuthenticated';
 
-    if (sessionStorage.getItem(AUTH_KEY) !== 'true') {
-        const input = prompt('パスワードを入力してください');
-
-        if (input === PASSWORD) {
-            sessionStorage.setItem(AUTH_KEY, 'true');
-        } else {
-            document.body.innerHTML =
-                '<p style="text-align:center;margin-top:40vh;">アクセスできません</p>';
-        }
-    }
-</script>
 
 <body>
     <header class="l-header">
@@ -312,8 +315,6 @@
     <script src="./assets/script/scroll.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script>
-    </script>
 </body>
 
 </html>
