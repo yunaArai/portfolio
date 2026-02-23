@@ -53,10 +53,11 @@ padding-top: 20px;
 color: #000;
 }
 h2{
-    font-family: 'EB Garamond';
     font-size: 2.4rem;
-    font-weight: bold;
     color: #00517F;
+    font-family: "Cutive", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 h2 span{
     color: #f28B82;
@@ -129,9 +130,11 @@ h4{
 }
 .l-header li {
     font-size: 1.0rem;
-    font-weight: bold;
     letter-spacing: 0.12rem;
     color: #fff;
+    font-family: "Cutive", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .l-header .shadow {
     text-shadow: 0 0 5px #1f3c88;
