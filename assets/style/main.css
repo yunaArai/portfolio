@@ -329,6 +329,9 @@ letter-spacing: 0.1em;
     color: #00517F;
     padding: 10px 0 4px;
 }
+#section03 .__text {
+    line-height: 2;
+}
 #section03 .__text span{
     color: #00517F;
     border-radius: 100vh;
