@@ -601,6 +601,9 @@ gap: 30px;
 font-size: 1.5rem;
 text-align: center;
 }
+    h2,h3{
+        1.4rem
+    }
 
 img{
 width: 100%;
@@ -633,6 +636,9 @@ width: 100%;
     }
     #section01 .__block-01{
         left: 7%;
+    }
+    .line {
+    height: 20px;
     }
     
     /*section02*/
