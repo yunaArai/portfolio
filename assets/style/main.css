@@ -249,7 +249,7 @@ h4{
 }
 .line {
   height: 35px; 
-  background-image: url("../image/line.png");
+  background-image: url("../image/line.jpg");
   background-repeat: repeat-x;
   background-position: left center;
 }
