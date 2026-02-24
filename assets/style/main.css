@@ -247,6 +247,12 @@ h4{
         background-position: 0% 50%;
     }
 }
+.line {
+  height: 35px; 
+  background-image: url("../image/line.png");
+  background-repeat: repeat-x;
+  background-position: left center;
+}
 
 /*section02*/
 #section02 .l-inner{
