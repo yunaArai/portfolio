@@ -225,10 +225,10 @@ h4{
     height: 720px; 
     background: linear-gradient(
         45deg,
+        #F0E3A7,
+        #AAC3F4,
         #ffffe0,
-        #45b5c4,
-        #ffffe0,
-        #f0ffff
+        #A7D8F0
     );
     background-size: 200% 200%;
     animation: gradientMove 5s ease infinite;
@@ -248,15 +248,18 @@ h4{
     }
 }
 .line {
-  height: 35px; 
-  background-image: url("../image/line.jpg");
-  background-repeat: repeat-x;
-  background-position: left center;
+    height: 35px; 
+    background-image: url("../image/line.jpg");
+    background-repeat: repeat-x;
+    background-position: left center;
 }
 
 /*section02*/
+#section02 {
+    background-color: #FFFBF5;
+}
 #section02 .l-inner{
-    padding: 40px 0;
+    padding: 65px 0;
 }
 #section02 .__block-01{
     display: flex;
@@ -286,12 +289,103 @@ h4{
     font-weight: bold;
 }
 
-/*section03*/
-#section03 {
-    background: linear-gradient(0.6turn, #fffcf7,#f4fffb, #f3fbff);
+#section02 .back {
+    background: #A7D8F0;
 }
+
+#section02 .name__area{
+    display: flex;
+    justify-content: space-between;
+}
+
+#section02 .img__area{
+    display: flex;
+    gap: 45px;
+}
+
+#section02 .name__area img{
+    width: 75px;
+    height: 100px;
+}
+
+.fuwafuwa {
+    animation: fuwafuwa 3s ease-in-out infinite alternate;
+    background:  no-repeat center center / 60px auto;
+    display: inline-block;
+    transition: 1.5s ease-in-out;
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+  }
+   
+  @keyframes fuwafuwa {
+    0% {
+      transform:translate(0, 0) rotate(-7deg);
+    }
+    50% {
+      transform:translate(0, -7px) rotate(0deg);
+    }
+    100% {
+      transform:translate(0, 0) rotate(7deg);
+    }
+  }
+
+  @keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+.rainbow {
+	position: relative;
+	z-index: 0;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 2rem;
+	
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -2;
+		left: -50%;
+		top: -50%;
+		width: 200%;
+		height: 200%;
+		background-color: #AAC3F4;
+		background-repeat: no-repeat;
+		background-size: 50% 50%, 50% 50%;
+		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+		background-image: linear-gradient(#AAC3F4, #AAC3F4), linear-gradient(#F0E3A7, #F0E3A7), linear-gradient(#F5ABA5, #F5ABA5), linear-gradient(#A7D8F0, #A7D8F0);
+		animation: rotate 4s linear infinite;
+	}
+	
+	&::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 6px;
+		top: 6px;
+		width: calc(100% - 12px);
+		height: calc(100% - 12px);
+		background: white;
+		border-radius: 5px;
+		animation: opacityChange 3s infinite alternate;
+	}
+}
+
+@keyframes opacityChange {
+	50% {
+		opacity:1;
+	}
+	100% {
+		opacity: .5;
+	}
+}
+
+
+/*section03*/
 #section03 .l-inner{
-padding: 40px 0;
+padding: 65px 0 0;
 }
 #section03 .large__title{
 font-size: 2.5rem;
@@ -347,9 +441,6 @@ letter-spacing: 0.1em;
 }
 
 /*section04*/
-#section04 {
-    background: linear-gradient(0.4turn, #fffcf7,#f4fffb, #f3fbff);
-}
 #section04 .l-inner{
     padding: 40px 0 20px;
 }
