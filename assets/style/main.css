@@ -971,6 +971,7 @@ footer .__box {
     }
 
     #section02 .name__area {
+        display: flex;
         flex-direction: column;
     }
 
