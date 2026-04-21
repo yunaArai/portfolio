@@ -348,7 +348,6 @@ h4 {
     background-size: cover;
     background-position: center;
     opacity: 0;
-    animation: fade 15s infinite;
 }
 
 .img1 {
@@ -358,11 +357,13 @@ h4 {
 
 .img2 {
     background-image: url(../image/bg2_pc.jpg);
+    animation: fade 15s infinite;
     animation-delay: 5s;
 }
 
 .img3 {
     background-image: url(../image/bg3_pc.jpg);
+    animation: fade 15s infinite;
     animation-delay: 10s;
 }
 
