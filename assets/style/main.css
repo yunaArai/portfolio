@@ -353,9 +353,8 @@ h4 {
 
 .img1 {
     background-image: url(../image/mainVisual_pc.jpg);
-    animation-delay: 0s;
+    animation-delay: 0.01s;
     opacity: 1;
-    animation-fill-mode: both;
 }
 
 .img2 {
@@ -373,15 +372,15 @@ h4 {
         opacity: 0;
     }
 
-    8% {
+    10% {
         opacity: 1;
     }
 
-    28% {
+    30% {
         opacity: 1;
     }
 
-    38% {
+    40% {
         opacity: 0;
     }
 
