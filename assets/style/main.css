@@ -333,7 +333,11 @@ h4 {
 }
 
 #section01 .main__visual {
-    background-image: url(../image/mainVisual_pc.jpg);
+    background-image: url(../image/mainVisual_pc.jpg), url(../image/bg2_pc.jpg);
+    animation: image_anime 1s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
