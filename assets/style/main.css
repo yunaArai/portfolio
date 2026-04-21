@@ -333,11 +333,7 @@ h4 {
 }
 
 #section01 .main__visual {
-    background-image: url(../image/mainVisual_pc.jpg), url(../image/bg2_pc.jpg);
-    animation: image_anime 1s ease;
-    animation-fill-mode: forwards;
-    animation-delay: 2s;
-
+    background-image: url(../image/mainVisual_pc.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -345,12 +341,6 @@ h4 {
     margin-top: -70px;
     position: relative;
     z-index: 1;
-}
-
-@keyframes image_anime {
-    100% {
-        background-image: url(../image/bg2_pc.jpg);
-    }
 }
 
 #section01 .mv__bk {
