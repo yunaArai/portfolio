@@ -347,6 +347,13 @@ h4 {
     z-index: 1;
 }
 
+@keyframes image_anime {
+    100% {
+        /* 切り替え後の画像 */
+        background-image: url(../assets/img/after.jpg);
+    }
+}
+
 #section01 .mv__bk {
     position: absolute;
     top: 0;
