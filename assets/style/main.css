@@ -347,7 +347,6 @@ h4 {
     inset: 0;
     background-size: cover;
     background-position: center;
-    opacity: 0;
 }
 
 .img1 {
@@ -359,12 +358,14 @@ h4 {
     background-image: url(../image/bg2_pc.jpg);
     animation: fade 15s infinite;
     animation-delay: 5s;
+    opacity: 0;
 }
 
 .img3 {
     background-image: url(../image/bg3_pc.jpg);
     animation: fade 15s infinite;
     animation-delay: 10s;
+    opacity: 0;
 }
 
 @keyframes fade {
