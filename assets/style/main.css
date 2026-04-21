@@ -979,6 +979,7 @@ footer .__box {
         background-image: url(../image/bg2_sp.jpg);
         animation: fade 15s infinite;
         animation-delay: 5s;
+        animation-fill-mode: both;
         opacity: 0;
     }
 
@@ -986,9 +987,9 @@ footer .__box {
         background-image: url(../image/bg3_sp.jpg);
         animation: fade 15s infinite;
         animation-delay: 10s;
+        animation-fill-mode: both;
         opacity: 0;
     }
-
 
     #section01 .mv__bk {
         height: auto;
