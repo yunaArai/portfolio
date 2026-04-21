@@ -964,12 +964,31 @@ footer .__box {
     }
 
     #section01 .main__visual {
-        background-image: url(../image/mainVisual_sp.jpg);
         background-size: cover;
         height: auto;
         aspect-ratio: 13 / 15;
         background-position: top;
     }
+
+    .img1 {
+        background-image: url(../image/mainVisual_sp.jpg);
+        opacity: 1;
+    }
+
+    .img2 {
+        background-image: url(../image/bg2_sp.jpg);
+        animation: fade 15s infinite;
+        animation-delay: 5s;
+        opacity: 0;
+    }
+
+    .img3 {
+        background-image: url(../image/bg3_sp.jpg);
+        animation: fade 15s infinite;
+        animation-delay: 10s;
+        opacity: 0;
+    }
+
 
     #section01 .mv__bk {
         height: auto;
