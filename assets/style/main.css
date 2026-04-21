@@ -354,6 +354,7 @@ h4 {
 .img1 {
     background-image: url(../image/mainVisual_pc.jpg);
     animation-delay: 0s;
+    opacity: 1;
 }
 
 .img2 {
@@ -368,7 +369,7 @@ h4 {
 
 @keyframes fade {
     0% {
-        opacity: 1;
+        opacity: 0;
     }
 
     5% {
