@@ -317,7 +317,7 @@ h4 {
 }
 
 .btn {
-    border-bottom: 5px solid #EC6054;
+    border: none;
     border-radius: 100vh;
     top: calc(50% - .5em);
     color: #fff;
@@ -327,7 +327,6 @@ h4 {
 
 .btn:hover {
     margin-top: 3px;
-    border-bottom: 2px solid #EC6054;
     color: #fff;
     background: #EC6054;
     opacity: 1;
