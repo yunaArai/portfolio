@@ -3,12 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const content = document.querySelector('.content');
 
     button.addEventListener('click', () => {
-        if (content.style.display === 'block') {
-            content.style.display = 'none';
-            button.textContent = 'VIEW MORE';
-        } else {
-            content.style.display = 'block';
+        content.classList.toggle('is-open');
+
+        if (content.classList.contains('is-open')) {
             button.textContent = 'CLOSE';
+        } else {
+            button.textContent = 'VIEW MORE';
         }
     });
 });
