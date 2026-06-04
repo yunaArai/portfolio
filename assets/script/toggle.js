@@ -1,13 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('読み込み成功');
-
     const button = document.querySelector('.toggle');
     const content = document.querySelector('.content');
 
-    console.log(button);
-    console.log(content);
-
     button.addEventListener('click', () => {
-        console.log('クリックされた');
+        if (content.style.display === 'block') {
+            content.style.display = 'none';
+            button.textContent = 'VIEW MORE';
+        } else {
+            content.style.display = 'block';
+            button.textContent = 'CLOSE';
+        }
     });
 });
