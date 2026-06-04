@@ -1,12 +1,16 @@
-$(function () {
-    $(".toggle").on("click", function () {
-        const $btn = $(this);
-        const $content = $btn.next();
+const toggleBtn = document.querySelector('.toggle');
+const content = document.querySelector('.content');
 
-        $content.slideToggle();
+toggleBtn.addEventListener('click', () => {
+    const isOpen = toggleBtn.getAttribute('aria-expanded') === 'true';
 
-        // aria-expanded 切り替え
-        const isExpanded = $btn.attr("aria-expanded") === "true";
-        $btn.attr("aria-expanded", !isExpanded);
-    });
+    if (isOpen) {
+        content.style.display = 'none';
+        toggleBtn.textContent = 'VIEW MORE';
+        toggleBtn.setAttribute('aria-expanded', 'false');
+    } else {
+        content.style.display = 'block';
+        toggleBtn.textContent = 'CLOSE';
+        toggleBtn.setAttribute('aria-expanded', 'true');
+    }
 });
