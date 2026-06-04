@@ -310,6 +310,29 @@ h4 {
     animation-delay: 1.3s;
 }
 
+.btn__area {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 80px;
+}
+
+.btn {
+    border-bottom: 5px solid #EC6054;
+    border-radius: 100vh;
+    top: calc(50% - .5em);
+    color: #fff;
+    background-color: #f28B82;
+    padding: 20px 80px;
+}
+
+.btn:hover {
+    margin-top: 3px;
+    border-bottom: 2px solid #EC6054;
+    color: #fff;
+    background: #EC6054;
+    opacity: 1;
+}
+
 @keyframes fadeUp {
     to {
         opacity: 1;
@@ -671,29 +694,6 @@ h4 {
     font-size: 1.0rem;
     line-height: 1.8rem;
     text-align: left;
-}
-
-.btn__area {
-    display: flex;
-    justify-content: center;
-    padding: 30px 0 80px;
-}
-
-#section04 .btn {
-    border-bottom: 5px solid #EC6054;
-    border-radius: 100vh;
-    top: calc(50% - .5em);
-    color: #fff;
-    background-color: #f28B82;
-    padding: 20px 80px;
-}
-
-#section04 .btn:hover {
-    margin-top: 3px;
-    border-bottom: 2px solid #EC6054;
-    color: #fff;
-    background: #EC6054;
-    opacity: 1;
 }
 
 /*スライダー*/
