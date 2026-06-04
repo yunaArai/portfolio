@@ -331,6 +331,10 @@ h4 {
     opacity: 1;
 }
 
+.content {
+    display: none;
+}
+
 @keyframes fadeUp {
     to {
         opacity: 1;
