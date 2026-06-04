@@ -1,11 +1,7 @@
 document.querySelectorAll('.toggle').forEach(button => {
     button.addEventListener('click', () => {
-        const content =
-            button.closest('.btn__area')
-                .parentElement
-                .querySelector('.content');
-
-        if (!content) return;
+        const area = button.closest('.toggle-area');
+        const content = area.querySelector('.content');
 
         content.classList.toggle('is-open');
 
