@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.toggle').forEach(button => {
         button.addEventListener('click', () => {
-            const content = button.nextElementSibling;
+            const content =
+                button.closest('.btn__area').nextElementSibling;
 
             content.classList.toggle('is-open');
 
