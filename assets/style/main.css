@@ -636,7 +636,6 @@ h4 {
     border-right-width: 8px;
     background-color: #fff;
     padding: 35px;
-    width: 300px;
 }
 
 #section03 .__wrap .__box:hover {
@@ -669,6 +668,17 @@ h4 {
     max-width: 300px;
 }
 
+#section03 .center {
+    display: flex;
+    justify-content: center;
+}
+
+#section03 .__block02{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 /*section04*/
 #section04 .l-inner {
     padding: 40px 0 20px;
@@ -684,7 +694,7 @@ h4 {
     letter-spacing: 0.1em;
 }
 
-#section04 .__box {
+#section04 .__block-01 .__box {
     padding: 4px;
 }
 
@@ -700,6 +710,21 @@ h4 {
     font-size: 1.0rem;
     line-height: 1.8rem;
     text-align: left;
+}
+
+#section04 .__block-02{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#section04 .__block-02 .__box{
+    width: 33%;
+    padding-bottom: 3px;
+}
+
+#section04 .__block-02 img{
+    width: 100%;
 }
 
 /*スライダー*/
