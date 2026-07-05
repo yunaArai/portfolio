@@ -313,7 +313,7 @@ h4 {
 .btn__area {
     display: flex;
     justify-content: center;
-    padding: 30px 0 80px;
+    padding-top: 30px;
 }
 
 .btn {
@@ -617,14 +617,17 @@ h4 {
     letter-spacing: 0.1em;
 }
 
-#section03 .__block {
+#section03 .__block,#section03 .__block02 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: stretch;
 }
 
 #section03 .__wrap {
     padding-top: 20px;
+    width: calc((100% - 40px) / 3);
+    display: flex;
 }
 
 #section03 .__box {
@@ -635,7 +638,10 @@ h4 {
     border-left-width: 2px;
     border-right-width: 8px;
     background-color: #fff;
-    padding: 35px;
+    width: 100%;
+    padding: 25px;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 #section03 .__wrap .__box:hover {
@@ -650,6 +656,7 @@ h4 {
 #section03 .name {
     color: #00517F;
     padding: 10px 0 4px;
+    font-size: 1rem;
 }
 
 #section03 .__text {
@@ -660,12 +667,16 @@ h4 {
     color: #00517F;
     border-radius: 100vh;
     background-color: #A7D8F0;
-    padding: 2px 20px;
     margin: 2px 2px 0;
+    padding: 2px 12px;
+    font-size: .8rem;
+    display: inline-block;
 }
 
 #section03 img {
-    max-width: 300px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 #section03 .center {
@@ -673,13 +684,12 @@ h4 {
     justify-content: center;
 }
 
-#section03 .__block02{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 
 /*section04*/
+#section04 {
+    padding-bottom: 20px;
+}
+
 #section04 .l-inner {
     padding: 40px 0 20px;
 }
@@ -891,7 +901,6 @@ footer .__box {
     gap: 30px;
 }
 
-@media screen and (max-width:1000px) {}
 
 /*sp
 ----------------------*/
@@ -992,6 +1001,10 @@ footer .__box {
         display: none;
     }
 
+    .c-humburger-menu.is-bg {
+        background: #F28B82;
+    }
+
     /*メインビジュアル*/
     #section01 .title__text {
         font-size: 2.5rem;
@@ -1081,6 +1094,10 @@ footer .__box {
         padding: 40px 20px;
     }
 
+    #section03 .__wrap {
+        width: 100%;
+    }
+
     #section03 .__block {
         flex-direction: column;
         display: flex;
@@ -1113,6 +1130,10 @@ footer .__box {
 
     #section04 p {
         font-size: .8rem;
+    }
+
+    #section04 .__block-02 .__box {
+        width: 49%;
     }
 
     /*section05*/
