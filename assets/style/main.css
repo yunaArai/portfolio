@@ -730,11 +730,42 @@ h4 {
 
 #section04 .__block-02 .__box{
     width: 33%;
-    padding-bottom: 3px;
 }
 
 #section04 .__block-02 img{
     width: 100%;
+}
+
+#section04 .name {
+    color: #00517F;
+    padding: 5px 0;
+    font-size: .9rem;
+    white-space: nowrap;
+}
+
+#section04 .__text {
+    line-height: 2;
+    display: flex;
+    white-space: nowrap;
+}
+
+#section04 .__text span {
+    color: #00517F;
+    border-radius: 100vh;
+    background-color: #A7D8F0;
+    margin: 2px 2px 0;
+    padding: 2px 12px;
+    font-size: .7rem;
+    display: inline-block;
+}
+
+#section04 .text__area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 17px;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 /*スライダー*/
@@ -1166,5 +1197,15 @@ footer .__box {
 
     footer .brand__name {
         font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #section04 .__block-02 {
+        flex-direction: column;
+    }
+
+    #section04 .__block-02 .__box {
+        width: 100%;
     }
 }
