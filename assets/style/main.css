@@ -617,7 +617,8 @@ h4 {
     letter-spacing: 0.1em;
 }
 
-#section03 .__block,#section03 .__block02 {
+#section03 .__block,
+#section03 .__block02 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -722,17 +723,17 @@ h4 {
     text-align: left;
 }
 
-#section04 .__block-02{
+#section04 .__block-02 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-#section04 .__block-02 .__box{
+#section04 .__block-02 .__box {
     width: 33%;
 }
 
-#section04 .__block-02 img{
+#section04 .__block-02 img {
     width: 100%;
 }
 
@@ -777,7 +778,7 @@ h4 {
     display: flex;
     gap: 0;
     width: max-content;
-    animation: slide 40s linear infinite;
+    animation: slide 90s linear infinite;
 }
 
 .sliderArea .__box img {
